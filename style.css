@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.background {
+  height: 100vh;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to left bottom,
+    #0ec393,
+    #0ab78b,
+    #08aa83,
+    #079e7b,
+    #089273
+  );
+}
+
+.page {
+  height: 85vh;
+  min-height: 800px;
+  max-width: 600px;
+  width: 93vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  box-shadow: 10px 10px 63px -9px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 10px 10px 63px -9px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 10px 10px 63px -9px rgba(0, 0, 0, 0.32);
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 50px;
+}
+
+.pre_unsubscribe_container {
+  text-align: center;
+  /* justify-content: center; */
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+
+.post_unsubscribe_container {
+  text-align: center;
+  height: 40vh;
+  display: none;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+
+h1 {
+  color: #089273;
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+text {
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  color: rgb(38, 38, 38);
+  line-height: 2;
+  font-size: 20px;
+  text-align: center;
+}
+
+.text_line_height {
+  line-height: 2;
+}
+
+.text_bottom_margin {
+  margin-bottom: 20px;
+}
+
+.unsubscribe_button {
+  border-width: 0px;
+  background-image: linear-gradient(
+    to left bottom,
+    #0ec393,
+    #0ab78b,
+    #08aa83,
+    #079e7b,
+    #089273
+  );
+  color: white;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 550px) {
+  .background {
+    min-height: 680px;
+  }
+
+  .page {
+    min-height: 520px;
+    width: 88vw;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
+  text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 40px;
+  }
+  button {
+    font-size: 12px;
+  }
+}
