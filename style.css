@@ -51,13 +51,20 @@
   margin-bottom: 50px;
 }
 
+.banner {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  max-width: 400px;
+  width: 70vw;
+}
+
 .pre_unsubscribe_container {
   text-align: center;
   /* justify-content: center; */
   height: 40vh;
   display: flex;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 .post_unsubscribe_container {
@@ -65,7 +72,7 @@
   height: 40vh;
   display: none;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 h1 {
@@ -133,6 +140,10 @@ text {
   .page {
     min-height: 520px;
     width: 88vw;
+  }
+
+  .banner {
+    max-width: 300px;
   }
 
   h3 {
