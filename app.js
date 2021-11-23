@@ -3,6 +3,10 @@ const form = document.getElementById("form");
 const logoURL = getUrlVars()["inf_custom_LogoURL"];
 const decodelogoURL = decodeURIComponent(logoURL);
 const inputValue = getUrlVars()["inf_field_Email"];
+const shopNameContainer = document.getElementById("shop_name_container");
+const shopNameContainer2 = document.getElementById("shop_name_container_2");
+const shopName = getUrlVars()["shop_name"];
+const shopNameModified = shopName.replaceAll("+", " ") + ".";
 
 // Functions
 window.onload = function () {
@@ -27,5 +31,7 @@ function getUrlVars() {
   return vars;
 }
 
-// document.getElementById("banner").src = decodelogoURL;
+document.getElementById("banner").src = decodelogoURL;
 document.getElementById("input").value = inputValue;
+shopNameContainer.innerHTML = shopNameModified;
+shopNameContainer2.innerHTML = shopNameModified;
