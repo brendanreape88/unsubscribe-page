@@ -1,21 +1,20 @@
 // Selectors
-const unsubscribeButton = document.querySelector(".unsubscribe_button");
+const form = document.getElementById("form");
 const logoURL = getUrlVars()["inf_custom_LogoURL"];
 const decodelogoURL = decodeURIComponent(logoURL);
-
-// Event Listeners
-unsubscribeButton.addEventListener("click", unsubscribe);
+const inputValue = getUrlVars()["inf_field_Email"];
 
 // Functions
 window.onload = function () {
   getUrlVars();
 };
 
-function unsubscribe() {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
   document.getElementById("pre_unsubscribe_container").style.display = "none";
   document.getElementById("post_unsubscribe_container").style.display = "flex";
   document.getElementById("unsubscribe_button").style.visibility = "hidden";
-}
+});
 
 function getUrlVars() {
   var vars = {};
@@ -28,4 +27,5 @@ function getUrlVars() {
   return vars;
 }
 
-document.getElementById("banner").src = decodelogoURL;
+// document.getElementById("banner").src = decodelogoURL;
+document.getElementById("input").value = inputValue;
